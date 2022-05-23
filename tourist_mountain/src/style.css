@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.app{
+    text-align: center;
+    width: 50%;
+    margin: 2.5rem auto 0 auto;
+    border: 5px solid #081B26;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: #081B26 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, #081B26 0px -3px 0px inset;
+}
+
+.mountSection{
+    border: 2px solid #081B26;
+    border-radius: 15px;
+    margin: 1.2rem 0 0 0;
+    padding: 30px;
+    color: #E8DFC2;
+}
+
+.img--container{
+    width: 80%;
+    min-height: 25vh;
+    background-color: #081B26;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.img--container img{
+    width: 100%;
+    min-height: 20vh;
+    border-radius: 15px;
+}
+p{
+    color: #274259;
+    font-size: 1.5rem;
+}
+.mountSection span{
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #F2B077;
+}
+
+.mountSection h1, .app h1{
+    font-size: 30px;
+    color: #081B26;
+}
+.mountInfo{
+    padding: 3rem;
+}
+.mountSection h3{
+    color:#274259 ;  
+}
+
+/* media query for smaller devices */
+
+@media screen and (max-width:390px) {
+    .mountInfo p{
+        font-size: 1.2rem !important;
+    }
+
+    .mountInfo span{
+        font-size: 1rem !important;
+    }
+
+    .mountSection h1, .app h1{
+        font-size: 1.6rem !important;
+    }
+
+    .mountInfo h3{
+        font-size: 1.2rem !important;
+    }
+}
+
+/* media query for small devices */
+
+@media screen and (max-width: 500px) {
+    .app{
+        width: 100%;
+    }
+
+    .img--container{
+        min-width: 100%; 
+    }
+
+    .img--container img{
+        min-height: 27vh;
+    }
+
+    .mountSection h1, .app h1{
+        font-size: 25px;
+    }
+    .mountSection span{
+        font-size: 15px;
+    }
+    .mountInfo p{
+        font-size: 20px;
+    }
+}
+
+/* media query for medium devices */
+@media screen and (max-width:900px ) {
+    .app{
+        width: 100%;
+    }
+
+    .img--container img{
+        min-height: 27vh;
+    }
+    .mountSection h1, .app h1{
+        font-size: 2.3rem;
+    }
+    .mountInfo p{
+        font-size: 1.9rem;
+    }
+
+    .mountInfo h3{
+        font-size: 1.8rem;
+    }
+    .mountInfo span{
+        font-size: 1.5rem;
+    }
+}
